@@ -97,14 +97,14 @@ document.getElementById("year").textContent = new Date().getFullYear();
 navToggle?.addEventListener("click", () => {
   const isOpen = navToggle.getAttribute("aria-expanded") === "true";
   navToggle.setAttribute("aria-expanded", String(!isOpen));
-  navToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+  navToggle.setAttribute("aria-label", translateText(isOpen ? "Open navigation" : "Close navigation"));
   navMenu.classList.toggle("is-open", !isOpen);
 });
 
 navMenu?.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => {
     navToggle?.setAttribute("aria-expanded", "false");
-    navToggle?.setAttribute("aria-label", "Open navigation");
+    navToggle?.setAttribute("aria-label", translateText("Open navigation"));
     navMenu.classList.remove("is-open");
   });
 });
@@ -171,9 +171,42 @@ document.querySelectorAll("[data-close-modal]").forEach((element) => {
   element.addEventListener("click", closeModal);
 });
 
+document.querySelectorAll("[data-certificate]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    lastFocusedElement = document.activeElement;
+    const title = link.closest(".achievement-card").querySelector("h3").textContent;
+    const heading = document.createElement("h2");
+    heading.id = "modal-title";
+    heading.textContent = title;
+    const image = document.createElement("img");
+    image.src = link.getAttribute("href");
+    image.alt = `Sertifikat ${title}`;
+    modalContent.replaceChildren(heading, image);
+    translateContent(modalContent);
+    modalPanel.classList.add("certificate-modal");
+    modal.hidden = false;
+    modalPanel.scrollTop = 0;
+    document.body.classList.add("modal-open");
+    modalPanel.querySelector(".modal-close").focus();
+  });
+});
+
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && !modal.hidden) {
     closeModal();
+  }
+  if (event.key === "Tab" && !modal.hidden) {
+    const controls = [...modalPanel.querySelectorAll('button, a[href], [tabindex="0"]')];
+    const first = controls[0];
+    const last = controls[controls.length - 1];
+    if (event.shiftKey && (document.activeElement === first || document.activeElement === modalPanel)) {
+      event.preventDefault();
+      last?.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first?.focus();
+    }
   }
 });
 
@@ -213,6 +246,7 @@ function openProject(projectId) {
       </div>
     </div>
   `;
+  translateContent(modalContent);
   modal.hidden = false;
   document.body.classList.add("modal-open");
   modalPanel.focus();
@@ -220,6 +254,7 @@ function openProject(projectId) {
 
 function closeModal() {
   modal.hidden = true;
+  modalPanel.classList.remove("certificate-modal");
   document.body.classList.remove("modal-open");
   if (lastFocusedElement) {
     lastFocusedElement.focus();
