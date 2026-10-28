@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Kharisma Alya Septiana portfolio preview">
+  <rect width="1200" height="630" fill="#eef8fb"/>
+  <rect x="80" y="82" width="1040" height="466" rx="34" fill="#ffffff"/>
+  <circle cx="928" cy="315" r="128" fill="#c7eaf4"/>
+  <circle cx="928" cy="315" r="78" fill="#0f5f8f"/>
+  <text x="928" y="340" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#ffffff">KA</text>
+  <text x="144" y="240" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#17202a">Kharisma Alya Septiana</text>
+  <text x="148" y="306" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f5f8f">Information Technology Portfolio</text>
+  <text x="148" y="366" font-family="Arial, sans-serif" font-size="24" fill="#5b6573">Data analysis, system development, UI design, and project management</text>
+</svg>

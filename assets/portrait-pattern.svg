@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-label="Minimal blue portfolio background pattern">
+  <rect width="900" height="900" fill="#eef8fb"/>
+  <rect x="82" y="96" width="210" height="120" rx="28" fill="#c7eaf4" opacity=".72"/>
+  <rect x="628" y="118" width="202" height="142" rx="32" fill="#ffffff" opacity=".75"/>
+  <rect x="598" y="612" width="230" height="126" rx="30" fill="#c7eaf4" opacity=".72"/>
+  <path d="M120 590c140-90 240-104 350-40s214 42 310-64" fill="none" stroke="#0f5f8f" stroke-width="12" stroke-linecap="round" opacity=".16"/>
+  <path d="M160 660c118-58 218-62 300-12s170 46 270-10" fill="none" stroke="#0b416a" stroke-width="8" stroke-linecap="round" opacity=".12"/>
+  <g fill="#0f5f8f" opacity=".14">
+    <rect x="240" y="250" width="72" height="72" rx="20"/>
+    <rect x="560" y="310" width="54" height="54" rx="16"/>
+    <rect x="395" y="125" width="42" height="42" rx="12"/>
+  </g>
+</svg>

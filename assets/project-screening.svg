@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Mobile and desktop UI mockup for health screening">
+  <rect width="1200" height="750" fill="#f7fcfe"/>
+  <rect x="112" y="104" width="646" height="452" rx="30" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="158" y="154" width="224" height="28" rx="14" fill="#17202a"/>
+  <rect x="158" y="214" width="514" height="96" rx="22" fill="#eef8fb"/>
+  <circle cx="220" cy="262" r="28" fill="#0f5f8f"/>
+  <rect x="270" y="244" width="230" height="16" rx="8" fill="#5b6573" opacity=".55"/>
+  <rect x="270" y="274" width="170" height="12" rx="6" fill="#5b6573" opacity=".35"/>
+  <rect x="158" y="342" width="222" height="144" rx="22" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="416" y="342" width="222" height="144" rx="22" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="202" y="394" width="134" height="18" rx="9" fill="#0f5f8f"/>
+  <rect x="460" y="394" width="134" height="18" rx="9" fill="#0f5f8f"/>
+  <rect x="782" y="142" width="256" height="500" rx="34" fill="#0b416a"/>
+  <rect x="808" y="184" width="204" height="416" rx="24" fill="#ffffff"/>
+  <rect x="840" y="232" width="118" height="20" rx="10" fill="#17202a"/>
+  <rect x="840" y="282" width="140" height="68" rx="18" fill="#eef8fb"/>
+  <rect x="840" y="374" width="140" height="68" rx="18" fill="#eef8fb"/>
+  <rect x="840" y="466" width="140" height="68" rx="18" fill="#eef8fb"/>
+  <circle cx="878" cy="316" r="16" fill="#0f5f8f"/>
+  <circle cx="878" cy="408" r="16" fill="#66b8cd"/>
+  <circle cx="878" cy="500" r="16" fill="#0f5f8f"/>
+</svg>

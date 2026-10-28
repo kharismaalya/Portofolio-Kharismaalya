@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Rule-based expert system interface for asthma diagnosis">
+  <rect width="1200" height="750" fill="#eef8fb"/>
+  <rect x="118" y="84" width="964" height="582" rx="32" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="164" y="138" width="282" height="474" rx="24" fill="#0b416a"/>
+  <rect x="204" y="196" width="160" height="22" rx="11" fill="#ffffff"/>
+  <rect x="204" y="242" width="198" height="14" rx="7" fill="#c7eaf4"/>
+  <rect x="204" y="274" width="150" height="14" rx="7" fill="#c7eaf4" opacity=".8"/>
+  <g fill="#ffffff" opacity=".96">
+    <rect x="204" y="354" width="196" height="54" rx="16"/>
+    <rect x="204" y="430" width="196" height="54" rx="16"/>
+    <rect x="204" y="506" width="196" height="54" rx="16"/>
+  </g>
+  <rect x="508" y="154" width="432" height="44" rx="22" fill="#17202a"/>
+  <rect x="508" y="232" width="528" height="74" rx="18" fill="#f8fcfe" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="548" y="262" width="290" height="16" rx="8" fill="#5b6573" opacity=".55"/>
+  <circle cx="982" cy="269" r="18" fill="#0f5f8f"/>
+  <rect x="508" y="334" width="528" height="74" rx="18" fill="#f8fcfe" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="548" y="364" width="246" height="16" rx="8" fill="#5b6573" opacity=".55"/>
+  <circle cx="982" cy="371" r="18" fill="#0f5f8f"/>
+  <path d="M594 506h320M754 434v144M594 506l160-72 160 72-160 72z" fill="none" stroke="#0f5f8f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="594" cy="506" r="32" fill="#c7eaf4"/>
+  <circle cx="754" cy="434" r="32" fill="#66b8cd"/>
+  <circle cx="914" cy="506" r="32" fill="#c7eaf4"/>
+  <circle cx="754" cy="578" r="32" fill="#0b416a"/>
+</svg>

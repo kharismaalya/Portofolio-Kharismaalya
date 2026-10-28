@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Diagram pipeline ETL Twitter/X">
+  <rect width="1200" height="750" fill="#f7fcfe"/>
+  <rect x="100" y="100" width="1000" height="550" rx="30" fill="white" stroke="#dbe7ee" stroke-width="3"/>
+  <text x="150" y="180" font-family="sans-serif" font-size="32" font-weight="700" fill="#17202a">Twitter/X Data Pipeline</text>
+  <text x="150" y="230" font-family="sans-serif" font-size="23" fill="#5b6573">Python / Automated ETL</text>
+  <path d="M360 385H450M720 385H810" stroke="#66b8cd" stroke-width="8"/>
+  <path d="m430 368 20 17-20 17m360-34 20 17-20 17" fill="none" stroke="#66b8cd" stroke-width="8"/>
+  <rect x="150" y="300" width="210" height="170" rx="22" fill="#eef8fb"/>
+  <rect x="450" y="300" width="270" height="170" rx="22" fill="#0b416a"/>
+  <rect x="810" y="300" width="240" height="170" rx="22" fill="#eef8fb"/>
+  <g font-family="sans-serif" font-size="28" text-anchor="middle" font-weight="700">
+    <text x="255" y="397" fill="#0f5f8f">Extract</text>
+    <text x="585" y="397" fill="white">Transform</text>
+    <text x="930" y="397" fill="#0f5f8f">Load</text>
+  </g>
+  <rect x="150" y="530" width="900" height="55" rx="14" fill="#eef8fb"/>
+  <text x="600" y="565" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#0f5f8f">Scraping  /  Cleaning  /  Data Processing</text>
+</svg>

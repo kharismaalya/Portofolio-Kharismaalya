@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Website interface mockup for medical tourism project">
+  <rect width="1200" height="750" fill="#f7fcfe"/>
+  <rect x="96" y="86" width="1008" height="578" rx="32" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="96" y="86" width="1008" height="92" rx="32" fill="#0b416a"/>
+  <circle cx="158" cy="132" r="16" fill="#c7eaf4"/>
+  <rect x="196" y="120" width="150" height="24" rx="12" fill="#ffffff"/>
+  <g fill="#c7eaf4" opacity=".9">
+    <rect x="742" y="122" width="70" height="14" rx="7"/>
+    <rect x="836" y="122" width="86" height="14" rx="7"/>
+    <rect x="946" y="122" width="82" height="14" rx="7"/>
+  </g>
+  <rect x="144" y="236" width="430" height="278" rx="24" fill="#eef8fb"/>
+  <path d="M144 462c96-96 188-120 284-48 54 40 96 52 146 34v66H144z" fill="#0f5f8f" opacity=".8"/>
+  <circle cx="474" cy="308" r="62" fill="#66b8cd"/>
+  <rect x="638" y="246" width="350" height="34" rx="17" fill="#17202a"/>
+  <rect x="638" y="302" width="290" height="18" rx="9" fill="#5b6573" opacity=".55"/>
+  <rect x="638" y="336" width="342" height="18" rx="9" fill="#5b6573" opacity=".35"/>
+  <rect x="638" y="398" width="148" height="50" rx="25" fill="#0f5f8f"/>
+  <rect x="144" y="560" width="224" height="56" rx="18" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="400" y="560" width="224" height="56" rx="18" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+  <rect x="656" y="560" width="224" height="56" rx="18" fill="#ffffff" stroke="#dbe7ee" stroke-width="3"/>
+</svg>

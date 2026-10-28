@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Ilustrasi presensi GPS dan kamera">
+  <rect width="1200" height="750" fill="#f7fcfe"/>
+  <rect x="100" y="100" width="1000" height="550" rx="30" fill="white" stroke="#dbe7ee" stroke-width="3"/>
+  <text x="150" y="175" font-family="sans-serif" font-size="30" font-weight="700" fill="#17202a">Presensi GPS &amp; Kamera</text>
+  <rect x="150" y="215" width="540" height="370" rx="22" fill="#eef8fb"/>
+  <path d="M150 340H690M150 470H690M290 215V585M540 215V585" stroke="#dbe7ee" stroke-width="20"/>
+  <circle cx="420" cy="395" r="100" fill="#66b8cd" opacity=".2"/>
+  <path d="M420 455s-65-68-65-112a65 65 0 0 1 130 0c0 44-65 112-65 112Z" fill="#0f5f8f"/>
+  <circle cx="420" cy="341" r="23" fill="white"/>
+  <rect x="735" y="215" width="315" height="250" rx="22" fill="#0b416a"/>
+  <path d="M805 295h35l15-20h70l15 20h35v100H805Z" fill="#eef8fb"/>
+  <circle cx="890" cy="344" r="32" fill="#66b8cd" stroke="#0b416a" stroke-width="8"/>
+  <rect x="735" y="500" width="315" height="85" rx="20" fill="#eef8fb"/>
+  <text x="892" y="551" text-anchor="middle" font-family="sans-serif" font-size="25" fill="#0f5f8f">GPS + Camera</text>
+</svg>

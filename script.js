@@ -1,0 +1,243 @@
+const projects = {
+  attendance: {
+    title: "Capstone Presensi GPS & Kamera",
+    subtitle: "System Analysis",
+    image: "assets/PRESENSI.png",
+    alt: "Tampilan aplikasi Capstone Presensi GPS dan Kamera",
+    overview: "Sistem presensi berbasis GPS dan kamera untuk proyek capstone.",
+    context: "Perancangan alur presensi yang memanfaatkan lokasi GPS dan kamera.",
+    role: "System analysis contributor",
+    process: "Menganalisis kebutuhan dan merancang alur sistem presensi berbasis GPS dan kamera.",
+    result: "Meraih Juara 3 Capstone Project Web Presensi.",
+    tools: ["System Analysis", "GPS", "Camera"]
+  },
+  pipeline: {
+    title: "Pipeline Scraping Twitter/X",
+    subtitle: "Python ETL Pipeline",
+    image: "assets/PIPELINE.png",
+    alt: "Diagram alur pipeline ETL untuk data Twitter/X",
+    overview: "Pipeline ETL otomatis berbasis Python untuk mengumpulkan dan mengolah data Twitter/X.",
+    context: "Tugas akhir dengan studi kasus Program Makan Bergizi Gratis.",
+    role: "Pengembangan pipeline ETL dan pengolahan data",
+    process: "Mengembangkan alur pengumpulan, pembersihan, dan pengolahan data Twitter/X secara otomatis menggunakan Python.",
+    result: "Pipeline ETL otomatis untuk data Twitter/X.",
+    tools: ["Python", "ETL", "Data Scraping", "Data Engineering"]
+  },
+  clustering: {
+    title: "Analisis Clustering Kelulusan Mahasiswa",
+    subtitle: "K-Means Clustering Analysis",
+    image: "assets/project-clustering.svg",
+    alt: "Hasil Klustering K-means scatter plot",
+    overview:
+      "Project ini menggunakan metode K-Means untuk melakukan clustering data historis mahasiswa berdasarkan data tracer study.",
+    context:
+      "Dikerjakan saat mengikuti program pertukaran mahasiswa, dengan fokus melihat pola tahun kelulusan mahasiswa Program Studi Sistem Informasi Universitas Brawijaya periode 2016-2020.",
+    role: "Data analysis contributor",
+    process:
+      "Mengolah data historis, menerapkan metode clustering, lalu menyajikan pola hasil analisis dalam visualisasi yang mudah dibaca.",
+    result: "Result / Output belum dilengkapi dengan angka atau laporan final pada PRD.",
+    tools: ["Data Analysis", "K-Means", "Clustering", "Data Visualization"]
+  },
+  medical: {
+    title: "JogjaCare – Medical Tourism Website",
+    subtitle: "Project Manager",
+    image: "assets/jogjacare.png",
+    alt: "Tampilan halaman utama JogjaCare untuk proyek Medical Tourism Website",
+    overview:
+      "Project website Medical Tourism merupakan project gabungan beberapa mata kuliah.",
+    context:
+      "Website dirancang sebagai produk kolaboratif yang membutuhkan koordinasi lintas kebutuhan, keputusan tim, dan penyelesaian masalah selama pengembangan.",
+    role: "Project Manager",
+    process:
+      "Mengatur komunikasi tim, membantu pengambilan keputusan, mengoordinasi anggota, dan menjaga penyelesaian pekerjaan selama pengembangan project.",
+    result: "Result / Output belum tersedia pada PRD.",
+    tools: ["Project Management", "Team Coordination", "Web Development", "Communication"]
+  },
+  asthma: {
+    title: "Sistem Pakar Diagnosa Penyakit Asma",
+    subtitle: "Rule-Based System",
+    image: "assets/project-expert-system.svg",
+    alt: "Rule-based expert system interface for asthma diagnosis",
+    overview:
+      "Sistem pakar berbasis website untuk membantu proses diagnosis awal penyakit asma.",
+    context:
+      "Project memanfaatkan rule dan data gejala yang telah dikumpulkan sebagai dasar proses diagnosis awal.",
+    role: "System development contributor",
+    process:
+      "Mengumpulkan data gejala, menyusun rule, dan mengembangkan alur website untuk proses konsultasi awal.",
+    result: "Result / Output belum tersedia pada PRD.",
+    tools: ["Expert System", "Rule-Based System", "Web Development", "Data Collection"]
+  },
+  screening: {
+    title: "SIMBPA – Skrining Ibu & Anak",
+    subtitle: "UI Design Project",
+    image: "assets/SKRINING%20IBU.jpeg",
+    alt: "Tampilan SIMBPA untuk skrining kesehatan ibu dan anak",
+    overview:
+      "Project kolaborasi antara mahasiswa Kebidanan dan mahasiswa Teknologi Informasi.",
+    context:
+      "Tim Teknologi Informasi mengembangkan kebutuhan skrining kesehatan ibu dan anak menjadi rancangan UI untuk versi mobile dan desktop.",
+    role: "UI design contributor",
+    process:
+      "Menerjemahkan requirement skrining menjadi rancangan antarmuka yang mendukung kebutuhan pengguna pada perangkat mobile dan desktop.",
+    result: "Rancangan UI desktop dan mobile serta prototipe interaktif menggunakan Figma.",
+    tools: ["Figma", "UI/UX", "Collaboration", "Requirement Analysis", "Mobile UI", "Desktop UI"]
+  }
+};
+
+const navToggle = document.querySelector(".nav-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const modal = document.querySelector("[data-modal]");
+const modalPanel = document.querySelector(".modal-panel");
+const modalContent = document.querySelector("[data-modal-content]");
+let lastFocusedElement = null;
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+navToggle?.addEventListener("click", () => {
+  const isOpen = navToggle.getAttribute("aria-expanded") === "true";
+  navToggle.setAttribute("aria-expanded", String(!isOpen));
+  navToggle.setAttribute("aria-label", isOpen ? "Open navigation" : "Close navigation");
+  navMenu.classList.toggle("is-open", !isOpen);
+});
+
+navMenu?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navToggle?.setAttribute("aria-expanded", "false");
+    navToggle?.setAttribute("aria-label", "Open navigation");
+    navMenu.classList.remove("is-open");
+  });
+});
+
+document.querySelectorAll("[data-project-carousel]").forEach((carousel) => {
+  const track = carousel.querySelector("[data-project-track]");
+  const previous = carousel.querySelector("[data-carousel-prev]");
+  const next = carousel.querySelector("[data-carousel-next]");
+
+  if (!track || !previous || !next) return;
+
+  const updateControls = () => {
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft >= maxScroll - 2;
+  };
+
+  const scrollByCard = (direction) => {
+    const card = track.querySelector(".small-card");
+    if (!card) return;
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
+    track.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: "smooth" });
+  };
+
+  previous.addEventListener("click", () => scrollByCard(-1));
+  next.addEventListener("click", () => scrollByCard(1));
+
+  let dragStartX = 0;
+  let dragStartScroll = 0;
+  let isDragging = false;
+
+  track.addEventListener("pointerdown", (event) => {
+    if (event.pointerType !== "mouse" || event.button !== 0) return;
+    isDragging = true;
+    dragStartX = event.clientX;
+    dragStartScroll = track.scrollLeft;
+    track.classList.add("is-dragging");
+    track.setPointerCapture(event.pointerId);
+  });
+
+  track.addEventListener("pointermove", (event) => {
+    if (!isDragging) return;
+    track.scrollLeft = dragStartScroll - (event.clientX - dragStartX);
+  });
+
+  const stopDragging = () => {
+    isDragging = false;
+    track.classList.remove("is-dragging");
+  };
+
+  track.addEventListener("pointerup", stopDragging);
+  track.addEventListener("pointercancel", stopDragging);
+  track.addEventListener("lostpointercapture", stopDragging);
+  track.addEventListener("scroll", updateControls, { passive: true });
+  window.addEventListener("resize", updateControls);
+  updateControls();
+});
+
+document.querySelectorAll("[data-project]").forEach((button) => {
+  button.addEventListener("click", () => openProject(button.dataset.project));
+});
+
+document.querySelectorAll("[data-close-modal]").forEach((element) => {
+  element.addEventListener("click", closeModal);
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && !modal.hidden) {
+    closeModal();
+  }
+});
+
+function openProject(projectId) {
+  const project = projects[projectId];
+  if (!project) return;
+
+  lastFocusedElement = document.activeElement;
+  modalContent.innerHTML = `
+    <img src="${project.image}" alt="${project.alt}">
+    <p class="eyebrow">${project.subtitle}</p>
+    <h2 id="modal-title">${project.title}</h2>
+    <div class="detail-grid">
+      <div>
+        <h3>Overview</h3>
+        <p>${project.overview}</p>
+      </div>
+      <div>
+        <h3>Problem / Context</h3>
+        <p>${project.context}</p>
+      </div>
+      <div>
+        <h3>Role</h3>
+        <p>${project.role}</p>
+      </div>
+      <div>
+        <h3>Process</h3>
+        <p>${project.process}</p>
+      </div>
+      <div>
+        <h3>Result / Output</h3>
+        <p>${project.result}</p>
+      </div>
+      <div>
+        <h3>Tools / Technology</h3>
+        <div class="tags">${project.tools.map((tool) => `<span>${tool}</span>`).join("")}</div>
+      </div>
+    </div>
+  `;
+  modal.hidden = false;
+  document.body.classList.add("modal-open");
+  modalPanel.focus();
+}
+
+function closeModal() {
+  modal.hidden = true;
+  document.body.classList.remove("modal-open");
+  if (lastFocusedElement) {
+    lastFocusedElement.focus();
+  }
+}
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.14 }
+);
+
+document.querySelectorAll(".reveal").forEach((element) => {
+  revealObserver.observe(element);
+});
