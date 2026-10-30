@@ -2,6 +2,9 @@
 // Product names, institutions, publication titles, and course titles stay official.
 const languagePairs = [
   ["Kepanitiaan", "Committee Work"], ["Pengalaman Kegiatan Kampus", "Campus Activities"],
+  ["Organisasi", "Organization"], ["Pengalaman Organisasi & Kepanitiaan", "Organization & Committee Experience"],
+  ["Pengalaman Kepanitiaan", "Committee Experience"], ["Pengalaman dalam Kegiatan Kampus", "Campus Involvement"],
+  ["Saya pernah terlibat dalam kompetisi keamanan siber (CTF), seminar nasional, Terabit, malam keakraban, dan Latihan Dasar Organisasi ITech. Kegiatan tersebut memberi pengalaman dalam koordinasi acara, komunikasi, dan kerja tim.", "I have participated in campus activities including a cybersecurity competition (CTF), a national seminar, Terabit, a student gathering, and ITech's basic organization training. These activities gave me experience in event coordination, communication, and teamwork."],
   ["Pelatihan & Sertifikat | Kharisma Alya Septiana", "Training & Certificates | Kharisma Alya Septiana"],
   ["6 Sertifikat", "6 Certificates"], ["Lihat 6 Sertifikat", "View 6 Certificates"],
   ["Pengembangan Kompetensi", "Competency Development"], ["Sertifikat Pelatihan", "Training Certificates"],

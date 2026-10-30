@@ -1701,6 +1701,11 @@ p {
   display: none;
 }
 
+.project-carousel[hidden],
+.committee-news[hidden] {
+  display: none !important;
+}
+
 .committee-detail-link {
   min-height: 36px;
   padding: 0.4rem 0.75rem;
