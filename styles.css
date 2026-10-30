@@ -280,15 +280,15 @@ h3 {
 
 h1 {
   max-width: 760px;
-  font-size: 4.8rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 2.2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.12rem;
 }
 
 p {
@@ -299,7 +299,7 @@ p {
   max-width: 620px;
   margin-top: 1.35rem;
   color: var(--muted);
-  font-size: 1.13rem;
+  font-size: 1.04rem;
 }
 
 .hero-actions {
@@ -1034,11 +1034,11 @@ p {
   }
 
   h1 {
-    font-size: 3.1rem;
+    font-size: 2.75rem;
   }
 
   h2 {
-    font-size: 2.15rem;
+    font-size: 1.9rem;
   }
 
   .hero {
@@ -1302,7 +1302,7 @@ p {
 }
 
 .committee-page-intro h1 {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
 }
 
 .committee-page-intro > p:last-child {
@@ -1800,7 +1800,7 @@ p {
 }
 
 .other-projects-hero h1 {
-  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-size: clamp(2rem, 4.4vw, 3.1rem);
 }
 
 .other-projects-hero-inner > p:not(.eyebrow) {
@@ -1978,7 +1978,7 @@ p {
 }
 
 .training-page-intro h1 {
-  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
 }
 
 .training-page-intro > p:not(.eyebrow) {
@@ -2510,11 +2510,11 @@ p {
   }
 
   h1 {
-    font-size: 2.55rem;
+    font-size: 2.25rem;
   }
 
   h2 {
-    font-size: 1.9rem;
+    font-size: 1.65rem;
   }
 
   .portrait-caption {
