@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="id">
   <head>
     <meta charset="utf-8" />
@@ -24,7 +24,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=cv-notice-3" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -76,12 +76,9 @@
             <div class="hero-actions" aria-label="Primary actions">
               <a class="btn btn-primary" href="#projects">View Projects</a>
               <a class="btn btn-ghost" href="#contact">Contact Me</a>
-              <a
-                class="btn btn-ghost"
-                href="CV_Kharisma_Alya_Septiana_OK.pdf"
-                download="CV-Kharisma-Alya-Septiana.pdf"
-                >Download CV</a
-              >
+              <button class="btn btn-ghost" type="button" onclick="window.alert('Maaf, CV Alya sedang diperbarui. Sebentar ya!')">
+                Download CV
+              </button>
             </div>
             <dl class="hero-meta" aria-label="Portfolio highlights">
               <div>
@@ -109,10 +106,6 @@
                   height="1040"
                   fetchpriority="high"
                 />
-              </div>
-              <div class="portrait-caption">
-                <strong>Technology portfolio</strong>
-                <span>Project-oriented profile</span>
               </div>
             </div>
           </div>
@@ -156,24 +149,23 @@
       <section class="section section-soft projects-section" id="projects">
         <div class="wrap">
           <div class="section-title reveal">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Featured Projects</h2>
+            <p class="eyebrow">Karya Pilihan</p>
+            <h2>Proyek Unggulan</h2>
             <p>
-              Four focused projects that show Kharisma's work across data, web
-              systems, UI design, and project coordination.
+              Proyek pilihan yang menampilkan kemampuan analisis data, pengembangan sistem, dan koordinasi proyek.
             </p>
           </div>
           <div class="featured-grid">
             <article class="project-card featured reveal">
+              <img src="assets/project-clustering.svg" alt="Visualisasi analisis clustering kelulusan mahasiswa" loading="lazy" /><div class="card-body"><h3>Analisis Clustering Kelulusan Mahasiswa</h3>
+              <p>Menganalisis data historis mahasiswa menggunakan K-Means untuk melihat pola kelulusan.</p>
+              <div class="tags"><span>Data Analysis</span><span>K-Means</span><span>Clustering</span></div>
+            <button class="text-button" type="button" data-project="clustering">View Details</button></div></article>
+            <article class="project-card featured reveal">
               <img src="assets/PRESENSI.png" alt="Tampilan aplikasi Capstone Presensi GPS dan Kamera" loading="lazy" /><div class="card-body"><h3>Capstone Presensi GPS &amp; Kamera</h3>
               <p>Merancang alur sistem dan menganalisis kebutuhan untuk presensi berbasis GPS dan kamera.</p>
-              <div class="tags"><span>System Analysis</span><span>GPS</span><span>Camera</span></div>
-            <button class="text-button" type="button" data-project="attendance">View Details</button></div></article>
-            <article class="project-card featured reveal">
-              <img src="assets/SKRINING%20IBU.jpeg" alt="Tampilan SIMBPA untuk skrining kesehatan ibu dan anak" loading="lazy" /><div class="card-body"><h3>SIMBPA – Skrining Ibu &amp; Anak</h3>
-              <p>Merancang UI desktop dan mobile serta prototipe interaktif menggunakan Figma.</p>
-              <div class="tags"><span>Figma</span><span>UI/UX</span></div>
-            <button class="text-button" type="button" data-project="screening">View Details</button></div></article>
+              <div class="tags"><span>Analisis Sistem</span><span>GPS</span><span>Kamera</span></div>
+            <button class="text-button" type="button" data-project="attendance">Lihat Detail</button></div></article>
             <article class="project-card featured reveal">
               <img src="assets/PIPELINE.png" alt="Diagram alur pipeline ETL untuk data Twitter/X" loading="lazy" /><div class="card-body"><h3>Pipeline Scraping Twitter/X</h3>
               <p>Tugas akhir: mengembangkan pipeline ETL otomatis berbasis Python untuk data terkait studi kasus Program Makan Bergizi Gratis.</p>
@@ -182,17 +174,21 @@
             <article class="project-card featured reveal">
               <img src="assets/jogjacare.png" alt="Tampilan halaman utama JogjaCare" loading="lazy" />
               <div class="card-body">
-                <p class="project-subtitle">Project Manager</p>
+                <p class="project-subtitle">Project Manager &amp; Data Analyst</p>
                 <h3>JogjaCare &ndash; Medical Tourism Website</h3>
-                <p>Project gabungan beberapa mata kuliah dengan peran sebagai Project Manager untuk koordinasi tim, keputusan, komunikasi, dan problem solving.</p>
-                <div class="tags"><span>Project Management</span><span>Web Development</span><span>Team Coordination</span></div>
+                <p>Berperan sebagai Project Manager dan Data Analyst: mengoordinasikan tim serta lini masa proyek, sekaligus mendukung pengolahan dan analisis data.</p>
+                <div class="tags"><span>Project Management</span><span>Data Analysis</span><span>Team Coordination</span></div>
                 <button class="text-button" type="button" data-project="medical">View Details</button>
               </div>
             </article>
           </div>
-          <div class="section-title compact reveal">
-            <p class="eyebrow">More Work</p>
-            <h2>Other Projects</h2>
+          <div class="projects-heading-row">
+            <div class="section-title compact reveal">
+              <p class="eyebrow">Karya Lainnya</p>
+              <h2>08 Projects</h2>
+              <p>Jelajahi proyek lain di bidang data, pengembangan web, desain antarmuka, dan kerja tim.</p>
+            </div>
+            <a class="btn btn-ghost projects-archive-link" href="other-projects.html">Jelajahi Proyek <span aria-hidden="true">&rarr;</span></a>
           </div>
           <div class="project-carousel reveal" data-project-carousel>
             <div class="project-carousel-controls" aria-label="Project carousel controls">
@@ -277,13 +273,14 @@
               <div>
                 <p class="eyebrow">Academic Experience</p>
                 <h3>Surveyor Tracer Study</h3>
+                <span class="experience-period">2026</span>
               </div>
               <p>
                 Bertanggung jawab dalam pelaksanaan Tracer Study dengan
                 menghubungi alumni melalui WhatsApp, telepon, dan grup alumni
                 untuk menyampaikan informasi serta mengingatkan pengisian
                 kuesioner. Melakukan pemantauan status pengisian, memperbarui
-                data alumni, merekap progres pengisian berdasarkan program studi
+                melakukan data entry dan memperbarui data alumni, merekap progres pengisian berdasarkan program studi
                 dan tahun kelulusan, serta menyusun laporan perkembangan untuk
                 memastikan pengisian kuesioner berjalan dengan baik dan mencapai
                 target yang ditetapkan.
@@ -293,12 +290,12 @@
             <article class="experience-card reveal">
               <div>
                 <p class="eyebrow">Academic Experience</p>
-                <h3>Tim Akreditasi Program Studi &amp; Asisten Penelitian</h3>
+                <h3>Tim Akreditasi Program Studi Teknologi Informasi</h3>
                 <p class="muted">Program Studi Teknologi Informasi, UNISA Yogyakarta</p>
-                <span class="experience-period">2022</span>
+                <span class="experience-period">2024</span>
               </div>
-              <p>Terlibat dalam penyusunan, pengolahan data, dan verifikasi berkas akreditasi program studi, serta membantu riset dan penelitian internal kampus bersama dosen.</p>
-              <div class="tags"><span>Research</span><span>Data Processing</span><span>Accreditation</span></div>
+              <p>Mengolah dan memverifikasi data akreditasi, memeriksa kelengkapan dokumen, serta membantu mengelola RPS, portofolio mata kuliah, dan dokumen pendukung akreditasi.</p>
+              <div class="tags"><span>Pengolahan Data</span><span>Dokumen</span><span>Akreditasi</span></div>
             </article>
             <article class="experience-card reveal internship-card">
               <div>
@@ -310,16 +307,17 @@
                 <p class="internship-role">Data Analyst &amp; Operational Administration</p>
               </div>
               <ul class="internship-duties">
-                <li>Melakukan monitoring jaringan Wi-Fi Coin Cleon secara rutin dan berkala untuk memastikan kualitas koneksi berjalan optimal.</li>
-                <li>Mengurusi billing penjualan voucher Wi-Fi serta mendukung seluruh kebutuhan administrasi dan operasional harian kantor.</li>
-                <li>Melayani pelanggan dan menangani keluhan (customer service/support) terkait masalah teknis maupun layanan Wi-Fi.</li>
-                <li>Melakukan analisis kelayakan layanan Wi-Fi Coin Cleon dengan metode Skala Likert dan dipublikasikan pada prosiding ilmiah nasional.</li>
+                <li>Melakukan data entry, rekapitulasi, pengelolaan dokumen, dan membantu administrasi operasional harian.</li>
+                <li>Membantu mengatur jadwal karyawan dan merekap lembur.</li>
+                <li>Melayani pertanyaan pelanggan serta berkoordinasi dengan tim untuk menindaklanjuti perbaikan Wi-Fi.</li>
+                <li>Menganalisis kelayakan layanan Coin Cleon menggunakan skala Likert; hasilnya dipresentasikan dalam prosiding seminar nasional.</li>
               </ul>
               <div class="tags">
                 <span>Industry Internship</span>
                 <span>Data Analysis</span>
                 <span>Operational Administration</span>
-                <span>Network Monitoring</span>
+                <span>Data Entry</span>
+                <span>Scheduling</span>
                 <span>Customer Service</span>
               </div>
             </article>
@@ -497,6 +495,7 @@
             <div class="committee-news">
               <h3>Committee Experience</h3>
               <p>Pengalaman dalam kegiatan kampus dan kepanitiaan.</p>
+              <a class="btn btn-ghost committee-detail-link" href="committee.html">Lihat Selengkapnya <span aria-hidden="true">&rarr;</span></a>
               <div class="committee-marquee" aria-label="Committee and campus event experience">
                 <div class="committee-track">
                   <article class="committee-story"><div class="committee-photo"><span>Foto kegiatan</span><b>01</b></div><div class="committee-story-copy"><span>Kompetisi</span><h4>Kompetisi Keamanan Siber</h4><p>Capture The Flag (CTF)</p></div></article>
@@ -536,15 +535,22 @@
               <div class="tags"><span>Microsoft Office</span><span>Spreadsheet</span><span>Google Workspace</span><span>Operational Support</span><span>Figma</span><span>Google Colab</span><span>Communication</span><span>Teamwork</span><span>Time Management</span></div>
             </div>
             <div class="training-section">
-              <h3>Training</h3>
-              <div class="training-grid">
-                <article class="training-card"><img src="assets/sertifikat Networking Basics_page-0001.jpg" alt="Sertifikat Networking Basics"><div><h4>Networking Basics</h4><p>Cisco Networking Academy</p></div></article>
-                <article class="training-card"><img src="assets/sertifikat Belajar Dasar-dasar HTML dan CSS.jpg" alt="Sertifikat Belajar Dasar-dasar HTML dan CSS"><div><h4>Belajar Dasar-dasar HTML dan CSS</h4><p>Dicoding Indonesia</p></div></article>
-                <article class="training-card"><img src="assets/sertifikat Introduction to Front End Development.jpg" alt="Sertifikat Introduction to Front-End Development"><div><h4>Introduction to Front-End Development</h4><p>SkillUp</p></div></article>
-                <article class="training-card"><img src="assets/sertifikat FUNDAMENTAL CYBER SECURITY.jpg" alt="Sertifikat Fundamental Cyber Security"><div><h4>Fundamental Cyber Security</h4><p>Digital Skill Course</p></div></article>
-                <article class="training-card"><img src="assets/sertifikat Belajar Membuat Aplikasi Back-End untuk Pemula_page-0001.jpg" alt="Sertifikat Belajar Membuat Aplikasi Back-End untuk Pemula"><div><h4>Belajar Membuat Aplikasi Back-End untuk Pemula</h4><p>Dicoding Indonesia</p></div></article>
-                <article class="training-card"><img src="assets/sertifikat Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)_page-0001.jpg" alt="Sertifikat Cloud Practitioner Essentials"><div><h4>Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)</h4><p>Amazon Web Services</p></div></article>
+              <div class="credentials-section-heading">
+                <div><p class="eyebrow">Pengembangan Kompetensi</p><h3>Pelatihan</h3></div>
+                <span class="credential-count">6 Sertifikat</span>
               </div>
+              <article class="certificate-card training-feature-card">
+                <div class="certificate-art certificate-art-image training-feature-art">
+                  <img src="assets/alya.jpg" alt="Kharisma Alya Septiana menerima medali perunggu di FAPERTA FAIR 7" loading="lazy" />
+                </div>
+                <div class="certificate-info">
+                  <p class="certificate-meta">Pengembangan Kompetensi <span>6 Sertifikat</span></p>
+                  <h4>Pelatihan</h4>
+                  <p>Pelatihan yang saya ikuti mencakup dasar jaringan, pengembangan web, keamanan siber, backend, dan cloud. Materinya melengkapi pengalaman saya dalam pengolahan data dan administrasi teknologi.</p>
+                  <div class="tags"><span>Jaringan</span><span>Web</span><span>Keamanan Siber</span><span>Backend</span><span>Cloud</span></div>
+                  <a class="btn btn-ghost training-more-link" href="training.html">Lihat 6 Sertifikat <span aria-hidden="true">&rarr;</span></a>
+                </div>
+              </article>
             </div>
             <div class="certificate-section">
               <div class="credentials-section-heading">
@@ -623,7 +629,7 @@
       </section>
     </div>
 
-    <script src="translations.js"></script>
-    <script src="script.js"></script>
+    <script src="translations.js?v=cv-notice-3"></script>
+    <script src="script.js?v=cv-notice-3"></script>
   </body>
 </html>

@@ -1,14 +1,14 @@
 const projects = {
   attendance: {
     title: "Capstone Presensi GPS & Kamera",
-    subtitle: "System Analysis",
+    subtitle: "Analisis Sistem",
     image: "assets/PRESENSI.png",
     alt: "Tampilan aplikasi Capstone Presensi GPS dan Kamera",
     overview: "Sistem presensi berbasis GPS dan kamera untuk proyek capstone.",
     context: "Perancangan alur presensi yang memanfaatkan lokasi GPS dan kamera.",
-    role: "System analysis contributor",
+    role: "Kontributor analisis sistem",
     process: "Menganalisis kebutuhan dan merancang alur sistem presensi berbasis GPS dan kamera.",
-    result: "Meraih Juara 3 Capstone Project Web Presensi.",
+    result: "Meraih Juara 3 Proyek Capstone Web Presensi.",
     tools: ["System Analysis", "GPS", "Camera"]
   },
   pipeline: {
@@ -25,61 +25,61 @@ const projects = {
   },
   clustering: {
     title: "Analisis Clustering Kelulusan Mahasiswa",
-    subtitle: "K-Means Clustering Analysis",
+    subtitle: "Analisis Clustering K-Means",
     image: "assets/project-clustering.svg",
     alt: "Hasil Klustering K-means scatter plot",
     overview:
-      "Project ini menggunakan metode K-Means untuk melakukan clustering data historis mahasiswa berdasarkan data tracer study.",
+      "Proyek ini menggunakan metode K-Means untuk mengelompokkan data historis mahasiswa berdasarkan Tracer Study.",
     context:
       "Dikerjakan saat mengikuti program pertukaran mahasiswa, dengan fokus melihat pola tahun kelulusan mahasiswa Program Studi Sistem Informasi Universitas Brawijaya periode 2016-2020.",
-    role: "Data analysis contributor",
+    role: "Kontributor analisis data",
     process:
       "Mengolah data historis, menerapkan metode clustering, lalu menyajikan pola hasil analisis dalam visualisasi yang mudah dibaca.",
-    result: "Result / Output belum dilengkapi dengan angka atau laporan final pada PRD.",
+    result: "Angka hasil akhir belum dicantumkan.",
     tools: ["Data Analysis", "K-Means", "Clustering", "Data Visualization"]
   },
   medical: {
     title: "JogjaCare – Medical Tourism Website",
-    subtitle: "Project Manager",
+    subtitle: "Manajer Proyek & Analis Data",
     image: "assets/jogjacare.png",
     alt: "Tampilan halaman utama JogjaCare untuk proyek Medical Tourism Website",
     overview:
-      "Project website Medical Tourism merupakan project gabungan beberapa mata kuliah.",
+      "Situs Medical Tourism ini merupakan proyek gabungan beberapa mata kuliah.",
     context:
-      "Website dirancang sebagai produk kolaboratif yang membutuhkan koordinasi lintas kebutuhan, keputusan tim, dan penyelesaian masalah selama pengembangan.",
-    role: "Project Manager",
+      "Situs ini dikembangkan secara kolaboratif dengan koordinasi kebutuhan, pengambilan keputusan, dan pemecahan masalah selama proses pengembangan.",
+    role: "Manajer Proyek & Analis Data",
     process:
-      "Mengatur komunikasi tim, membantu pengambilan keputusan, mengoordinasi anggota, dan menjaga penyelesaian pekerjaan selama pengembangan project.",
-    result: "Result / Output belum tersedia pada PRD.",
-    tools: ["Project Management", "Team Coordination", "Web Development", "Communication"]
+      "Mengoordinasikan komunikasi dan pekerjaan tim, mendukung pengambilan keputusan, serta berkontribusi sebagai analis selama pengembangan proyek.",
+    result: "Hasil akhir proyek belum dicantumkan.",
+    tools: ["Project Management", "Data Analysis", "Team Coordination", "Web Development", "Communication"]
   },
   asthma: {
     title: "Sistem Pakar Diagnosa Penyakit Asma",
-    subtitle: "Rule-Based System",
+    subtitle: "Sistem Berbasis Aturan",
     image: "assets/project-expert-system.svg",
     alt: "Rule-based expert system interface for asthma diagnosis",
     overview:
       "Sistem pakar berbasis website untuk membantu proses diagnosis awal penyakit asma.",
     context:
-      "Project memanfaatkan rule dan data gejala yang telah dikumpulkan sebagai dasar proses diagnosis awal.",
-    role: "System development contributor",
+      "Sistem menggunakan aturan dan data gejala yang dikumpulkan sebagai dasar diagnosis awal.",
+    role: "Kontributor pengembangan sistem",
     process:
-      "Mengumpulkan data gejala, menyusun rule, dan mengembangkan alur website untuk proses konsultasi awal.",
-    result: "Result / Output belum tersedia pada PRD.",
+      "Mengumpulkan data gejala, menyusun aturan, dan mengembangkan alur situs untuk konsultasi awal.",
+    result: "Hasil akhir proyek belum dicantumkan.",
     tools: ["Expert System", "Rule-Based System", "Web Development", "Data Collection"]
   },
   screening: {
     title: "SIMBPA – Skrining Ibu & Anak",
-    subtitle: "UI Design Project",
+    subtitle: "Proyek Desain Antarmuka",
     image: "assets/SKRINING%20IBU.jpeg",
     alt: "Tampilan SIMBPA untuk skrining kesehatan ibu dan anak",
     overview:
-      "Project kolaborasi antara mahasiswa Kebidanan dan mahasiswa Teknologi Informasi.",
+      "Proyek kolaborasi antara mahasiswa Kebidanan dan Teknologi Informasi.",
     context:
       "Tim Teknologi Informasi mengembangkan kebutuhan skrining kesehatan ibu dan anak menjadi rancangan UI untuk versi mobile dan desktop.",
-    role: "UI design contributor",
+    role: "Kontributor desain antarmuka",
     process:
-      "Menerjemahkan requirement skrining menjadi rancangan antarmuka yang mendukung kebutuhan pengguna pada perangkat mobile dan desktop.",
+      "Menerjemahkan kebutuhan skrining menjadi rancangan antarmuka untuk pengguna perangkat seluler dan desktop.",
     result: "Rancangan UI desktop dan mobile serta prototipe interaktif menggunakan Figma.",
     tools: ["Figma", "UI/UX", "Collaboration", "Requirement Analysis", "Mobile UI", "Desktop UI"]
   }
