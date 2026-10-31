@@ -1655,7 +1655,7 @@ p {
 }
 
 .skills-section .credentials-content {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   column-gap: 1.25rem;
   row-gap: 1rem;
@@ -1728,6 +1728,10 @@ p {
 }
 
 @media (max-width: 980px) {
+  .skills-section .credentials-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .skills-section .training-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

@@ -46,12 +46,12 @@ const projects = {
     overview:
       "Situs Medical Tourism ini merupakan proyek gabungan beberapa mata kuliah.",
     context:
-      "Situs ini dikembangkan secara kolaboratif dengan koordinasi kebutuhan, pengambilan keputusan, dan pemecahan masalah selama proses pengembangan.",
-    role: "Manajer Proyek & Analis Data",
+      "Proyek ini memerlukan pengumpulan dan input informasi rumah sakit serta apotek yang tersedia di Yogyakarta.",
+    role: "Manajer Proyek, Analis Data, dan Data Entry",
     process:
-      "Mengoordinasikan komunikasi dan pekerjaan tim, mendukung pengambilan keputusan, serta berkontribusi sebagai analis selama pengembangan proyek.",
+      "Mengoordinasikan komunikasi dan pekerjaan tim, memasukkan serta mengelola informasi rumah sakit dan apotek di Yogyakarta, dan mendukung analisis data proyek.",
     result: "Hasil akhir proyek belum dicantumkan.",
-    tools: ["Project Management", "Data Analysis", "Team Coordination", "Web Development", "Communication"]
+    tools: ["Project Management", "Data Analysis", "Data Entry", "Team Coordination", "Web Development", "Communication"]
   },
   asthma: {
     title: "Sistem Pakar Diagnosa Penyakit Asma",
